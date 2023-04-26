@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.room.RoomView">
+
+    <ImageView
+        android:id="@+id/ivRoomPic"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:clickable="true"
+        android:contentDescription="@string/take_room_image"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_room"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tvRoomNo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_room"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRoomPic" />
+
+    <ImageView
+        android:id="@+id/textView1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_description"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_guest"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/tvRoomCategory"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_category"
+        app:layout_constraintStart_toStartOf="@+id/tvRoomNo"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomNo" />
+
+
+    <ImageView
+        android:id="@+id/textView4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_price"
+        app:layout_constraintStart_toStartOf="@+id/tvRoomCategory"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomCategory" />
+
+    <Button
+        android:id="@+id/btnRoomUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/etRoomDescription"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/etStatus" />
+
+
+    <EditText
+        android:id="@+id/etNoOfGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints="No of guest"
+        android:ems="10"
+        android:hint="No. of guest"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/etPrice"
+        app:layout_constraintStart_toStartOf="@+id/etPrice"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints="price"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/etCategoryRoom"
+        app:layout_constraintStart_toStartOf="@+id/etCategoryRoom"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/etRoomNumber"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="Number"
+        android:ems="10"
+        android:hint="Room No"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRoomNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRoomNo"
+        app:layout_constraintTop_toTopOf="@+id/tvRoomNo" />
+
+    <EditText
+        android:id="@+id/etCategoryRoom"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints="room category"
+        android:ems="10"
+        android:hint="category"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRoomCategory"
+        app:layout_constraintEnd_toEndOf="@+id/etRoomNumber"
+        app:layout_constraintStart_toStartOf="@+id/etRoomNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvRoomCategory" />
+
+    <EditText
+        android:id="@+id/etRoomDescription"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints="Room Description"
+        android:ems="10"
+        android:hint="Room description"
+        android:inputType="textLongMessage|textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="@+id/etNoOfGuest"
+        app:layout_constraintStart_toStartOf="@+id/etNoOfGuest"
+        app:layout_constraintTop_toTopOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints="Room Status"
+        android:hint="Room Status"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etRoomDescription"
+        app:layout_constraintStart_toStartOf="@+id/etRoomDescription"
+        app:layout_constraintTop_toTopOf="@+id/statusIcon" />
+
+    <ImageView
+        android:id="@+id/statusIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@drawable/ic_action_status" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRoomPic" />
+
+    <ProgressBar
+        android:id="@+id/pbRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

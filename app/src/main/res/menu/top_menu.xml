@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_search" app:showAsAction="always"
+        android:title="Search" />
+
+    <item android:id="@+id/feedback"
+        android:title="Feedback" android:icon="@drawable/ic_feedback"/>
+
+    <item android:id="@+id/policy"
+        android:title="@string/policy_amp_version"
+        android:icon="@drawable/ic_policy"/>
+
+    <item android:id="@+id/signOut"
+        android:title="@string/sign_out"/>
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="11dp"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/shimmer_color"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/shimmer_color_lite"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPayment"
+                app:layout_constraintEnd_toStartOf="@+id/tvPayment"
+                app:layout_constraintTop_toTopOf="@+id/tvPayment" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:background="@color/shimmer_color_lite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/tvCustomerName"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/shimmer_color_lite"
+                android:gravity="center"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+                app:layout_constraintEnd_toStartOf="@+id/tvPayment"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toEndOf="@+id/tvDate"
+                app:layout_constraintTop_toTopOf="@+id/tvDate" />
+
+            <TextView
+                android:id="@+id/tvPayment"
+                android:layout_width="45dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/shimmer_color_lite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCustomerName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCustomerName"
+                app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

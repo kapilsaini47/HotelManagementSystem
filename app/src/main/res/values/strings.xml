@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">HMS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="policy_amp_version"><![CDATA[Policy & version]]></string>
+    <string name="tabs_to_choose_different_views">tabs to choose different views</string>
+    <string name="Room">room</string>
+    <string name="Employee">employee</string>
+    <string name="Customer">customer</string>
+    <string name="Payment">payment</string>
+    <string name="take_room_image">Take room image</string>
+    <string name="select_image">Select image</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="email">Email</string>
+    <string name="employee_id">Employee Id</string>
+    <string name="icon">icon</string>
+    <string name="submit">Submit</string>
+    <string name="designation">Designation</string>
+    <string name="pin_code">PIN Code</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="society">Society</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="room_image">room image</string>
+    <string name="menu_option">Menu Option</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+    <string name="upload_identity_document">*Upload Identity Document</string>
+    <string name="enter_customer_details">Enter customer details</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="register">Register</string>
+    <string name="sign_out">Sign out</string>
+    <string name="order_id">Order id#</string>
+    <string name="employee_image">Employee Image</string>
+    <string name="positon">Positon</string>
+    <string name="rs">Rs.</string>
+</resources>

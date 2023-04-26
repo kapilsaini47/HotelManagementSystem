@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/rooms">
+
+    <fragment
+        android:id="@+id/rooms"
+        android:name="com.example.hotelmanagementsystem.ui.fragments.Rooms"
+        android:label="fragment_rooms"
+        tools:layout="@layout/fragment_rooms" >
+        <action
+            android:id="@+id/action_rooms_to_policy2"
+            app:destination="@id/policy2" />
+        <action
+            android:id="@+id/action_rooms_to_searchActivity"
+            app:destination="@id/searchActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/customers"
+        android:name="com.example.hotelmanagementsystem.ui.fragments.Customers"
+        android:label="fragment_customers"
+        tools:layout="@layout/fragment_customers" >
+        <action
+            android:id="@+id/action_customers_to_searchActivity"
+            app:destination="@id/searchActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/employee"
+        android:name="com.example.hotelmanagementsystem.ui.fragments.Employee"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" >
+        <action
+            android:id="@+id/action_employee_to_searchActivity"
+            app:destination="@id/searchActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/status"
+        android:name="com.example.hotelmanagementsystem.ui.fragments.Status"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" >
+        <action
+            android:id="@+id/action_status_to_searchActivity"
+            app:destination="@id/searchActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/policy2"
+        android:name="com.example.hotelmanagementsystem.ui.fragments.Policy"
+        android:label="fragment_policy"
+        tools:layout="@layout/fragment_policy" />
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.example.hotelmanagementsystem.ui.fragments.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/employeeStatusTab"
+        android:name="com.example.hotelmanagementsystem.ui.tabs.EmployeeStatusTab"
+        android:label="fragment_employee_status_tab"
+        tools:layout="@layout/fragment_employee_status_tab" />
+    <fragment
+        android:id="@+id/paymentStatusTab"
+        android:name="com.example.hotelmanagementsystem.ui.tabs.PaymentStatusTab"
+        android:label="fragment_payment_status_tab"
+        tools:layout="@layout/fragment_payment_status_tab" />
+    <activity
+        android:id="@+id/searchActivity"
+        android:name="com.example.hotelmanagementsystem.ui.activity.search.SearchActivity"
+        android:label="activity_search"
+        tools:layout="@layout/activity_search" />
+</navigation>
